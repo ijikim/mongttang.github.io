@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 200" style="enable-background:new 0 0 100 200;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#391212;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:none;stroke:#391212;stroke-width:5;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#391212;stroke-width:5;stroke-miterlimit:10;stroke-dasharray:3.9124,3.9124;}
+</style>
+<g>
+	<g>
+		<g>
+			<circle class="st0" cx="50" cy="50.6" r="49.4"/>
+			<circle class="st1" cx="50" cy="50.6" r="37.7"/>
+		</g>
+		<g>
+			<g>
+				<line class="st2" x1="50" y1="94.4" x2="50" y2="98.4"/>
+				<line class="st3" x1="50" y1="106.2" x2="50" y2="165.5"/>
+				<line class="st2" x1="50" y1="169.3" x2="50" y2="173.3"/>
+				<g>
+					<polygon class="st0" points="32.5,168.3 50,198.7 67.5,168.3 					"/>
+				</g>
+			</g>
+		</g>
+	</g>
+	<g>
+		<defs>
+			<circle id="SVGID_1_" cx="49.9" cy="50.6" r="38.3"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<g style="clip-path:url(#SVGID_2_);">
+			
+				<image style="overflow:visible;" width="2360" height="2360" xlink:href="../../Logo/Mongguri.png"  transform="matrix(3.244416e-02 0 0 3.244416e-02 10.7522 12.3583)">
+			</image>
+		</g>
+	</g>
+</g>
+</svg>
