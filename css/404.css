@@ -1,0 +1,48 @@
+body {
+    background-color: #FFE998; /* 부드러운 노란 배경 */
+    padding: 0 30px;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    color: #333333; /* 짙은 브라운 텍스트 */
+}
+.pudding-icon{width: 100px; margin-top: 15px;}
+h1, h2{margin: 0 !important;  color: #381111;}
+h1{font-size: 20px;}
+h2{font-size: 50px;}
+.container404{
+    max-width: 800px;
+    margin: 30px auto 0;
+    background: white;
+    padding: 50px 0;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.text{font-size: 15px; margin: 10px;}
+.sad-pudding {font-size: 20px;}
+a{
+    display: inline-block;
+    padding: 12px 20px;
+    background: #381111; /* 짙은 브라운 */
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+a:hover {
+    background: #816A50; /* 따뜻한 브라운 */
+}
+.emoji1{
+    width: 50px;
+    margin: 0 auto;
+    aspect-ratio: 1;
+    display: block;
+}
+.emoji2{
+    width: 100px;
+    margin: 0 auto;
+    aspect-ratio: 1;
+    display: block;
+    padding-bottom: 20px;
+}
