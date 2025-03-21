@@ -8,12 +8,14 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Mongttang Pudding">
     <meta property="og:description" content="진짜 맛있는 푸딩을 찾아서">
-    <meta property="og:image" content="https://ijikim.github.io/mongttang.github.io/BrandName.jpg">
+    <meta property="og:image" content="https://ijikim.github.io/mongttang.github.io/image/BrandName.jpg">
+    <!-- font link -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sansita+One&display=swap" rel="stylesheet">
+    <!-- css link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="font.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/font.css">
     <title>몽땅푸딩</title>
 </head>
 <body>
@@ -30,17 +32,21 @@
             <a href="#home"><img src="image/Logo/mongguri.png"></a>
         </div>
     </header>
+    <!-- Header End -->
+
     <ul class="toggle_menu">
         <li><a href="#home">Home</a></li>
         <li><a href="#port">Brand Story</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#pudding_spot">Pudding Spot</a></li>
+        <li><a href="#pudding_spot" class="display_none">Pudding Spot</a></li>
         <li><a href="#bast_cafe_list">Best Cafe List</a></li>
     </ul>
+    <!-- Nav End -->
 
     <section class="parallax background1" id="home">
         <div class="element_up" id="obj01"></div>
-        <div class="container">
+
+        <div class="container display_none">
             <span class="letter">M</span>
             <span class="letter">o</span>
             <span class="letter">n</span>
@@ -58,6 +64,29 @@
             <span class="letter">i</span>
             <span class="letter">n</span>
             <span class="letter">g</span>
+        </div>
+
+        <div class="container_wrap display_none_pc">
+            <div class="container">
+                <span class="letter">M</span>
+                <span class="letter">o</span>
+                <span class="letter">n</span>
+                <span class="letter">g</span>
+                <span class="letter">t</span>
+                <span class="letter">t</span>
+                <span class="letter">a</span>
+                <span class="letter">n</span>
+                <span class="letter">g</span>
+            </div>
+            <div class="container">
+                <span class="letter">P</span>
+                <span class="letter">u</span>
+                <span class="letter">d</span>
+                <span class="letter">d</span>
+                <span class="letter">i</span>
+                <span class="letter">n</span>
+                <span class="letter">g</span>
+            </div>
         </div>
     </section>
     <!--첫 번째 섹션 영역 끝-->
@@ -86,7 +115,7 @@
             </div>
             <div class="port__title">
                 <h2>BRAND STORY</h2>
-                <p class="element_down text20">
+                <p class="element_down text20 display_none">
                     세상에는 많은 푸딩이 있지만 진짜 맛있는 푸딩을 찾기란 쉽지 않죠.<br>
                     그럴 때는, “몽땅푸딩”과 함께 전국의 숨겨진 푸딩 맛집을 발굴하고 경험해보는 건 어떨까요?<br>
                     달콤한 푸딩과 함께하면 일상의 피로도 부드럽게 잊혀질 거예요.<br>
@@ -94,11 +123,11 @@
                     “몽땅푸딩”은 푸딩 맛집 정보를 소개하고, 푸딩을 사랑하는 사람들에게<br>
                     행복한 맛의 경험을 선물하는 큐레이션 플랫폼이에요.
                 </p>
+                <p class="element_down text20 display_none_pc" aria-hidden="true">
+                    세상에는 많은 푸딩이 있지만 진짜 맛있는 푸딩을 찾기란 쉽지 않죠. 그럴 때는, “몽땅푸딩”과 함께 전국의 숨겨진 푸딩 맛집을 발굴하고 경험해보는 건 어떨까요? 달콤한 푸딩과 함께하면 일상의 피로도 부드럽게 잊혀질 거예요.<br>“몽땅푸딩”은 푸딩 맛집 정보를 소개하고, 푸딩을 사랑하는 사람들에게 행복한 맛의 경험을 선물하는 큐레이션 플랫폼이에요.
+                </p>
             </div>
         </div>
-    </section>
-    <section>
-
     </section>
     <!--두 번째 섹션 영역 끝-->
 
@@ -119,7 +148,7 @@
         </div>
         <div class="element_up">
             <div class="img img03"></div>
-            <div class="text">
+            <div class="title">
                 <h3>푸딩 덕후들의 취향을 존중할 것!</h3>
                 <p class="text20">푸딩 덕후들의 솔직한 리뷰와 평점을 반영해요</p>
             </div>
@@ -206,14 +235,14 @@
 
     <section class="content" id="bast_cafe_list">
         <h2>Best Cafe List</h2>
-        <div class="swiper mySwiper">
+        <div class="swiper mySwiper display_none">
             <div class="swiper-wrapper click_scroll">
                 <a href="#info01" class="swiper-slide">
                     <img src="image/contents/bast_cafe_list/0_list/list_1.jpg">
                     <div class="cafe_name">
                         <h4>서울</h4>
                         <h3>유원섬커피</h3>
-                        <ul class="menu_list">
+                        <ul class="menu_list display_none_t">
                             <li>
                                 <p class="text18 menu">커스타드 푸딩</p>
                                 <p class="text18">4,500원</p>
@@ -226,7 +255,7 @@
                     <div class="cafe_name">
                         <h4>서울</h4>
                         <h3>바이러닉 연구소</h3>
-                        <ul class="menu_list">
+                        <ul class="menu_list display_none_t">
                             <li>
                                 <p class="text18 menu">클래식 푸딩</p>
                                 <p class="text18">5,000원</p>
@@ -247,7 +276,7 @@
                     <div class="cafe_name">
                         <h4>인천</h4>
                         <h3>카페 소삼</h3>
-                        <ul class="menu_list">
+                        <ul class="menu_list display_none_t">
                             <li>
                                 <p class="text18 menu">커스타드 푸딩</p>
                                 <p class="text18">6,000원</p>
@@ -260,7 +289,7 @@
                     <div class="cafe_name">
                         <h4>경기</h4>
                         <h3>킷사텐</h3>
-                        <ul class="menu_list">
+                        <ul class="menu_list display_none_t">
                             <li>
                                 <p class="text18 menu">푸딩</p>
                                 <p class="text18">5,000원</p>
@@ -277,7 +306,7 @@
                     <div class="cafe_name">
                         <h4>강릉</h4>
                         <h3>카페덕덕</h3>
-                        <ul class="menu_list">
+                        <ul class="menu_list display_none_t">
                             <li>
                                 <p class="text18 menu">커스터드 푸딩</p>
                                 <p class="text18">5,500원</p>
@@ -294,7 +323,7 @@
                     <div class="cafe_name">
                         <h4>대전</h4>
                         <h3>브루블룸</h3>
-                        <ul class="menu_list">
+                        <ul class="menu_list display_none_t">
                             <li>
                                 <p class="text18 menu">푸유 푸딩</p>
                                 <p class="text18">4,500원</p>
@@ -307,7 +336,7 @@
                     <div class="cafe_name">
                         <h4>대구</h4>
                         <h3>험블앤멈블</h3>
-                        <ul class="menu_list">
+                        <ul class="menu_list display_none_t">
                             <li>
                                 <p class="text18 menu">오븐 푸딩</p>
                                 <p class="text18">5,000원</p>
@@ -324,7 +353,7 @@
                     <div class="cafe_name">
                         <h4>전라도</h4>
                         <h3>커피 학산로</h3>
-                        <ul class="menu_list">
+                        <ul class="menu_list display_none_t">
                             <li>
                                 <p class="text18 menu">밀크 푸딩</p>
                                 <p class="text18">5,000원</p>
@@ -337,7 +366,157 @@
                     <div class="cafe_name">
                         <h4>부산</h4>
                         <h3>DUDU</h3>
-                        <ul class="menu_list">
+                        <ul class="menu_list display_none_t">
+                            <li>
+                                <p class="text18 menu">카라멜 푸딩</p>
+                                <p class="text18">5,000원</p>
+                            </li>
+                            <li>
+                                <p class="text18 menu">딸기 판나코타</p>
+                                <p class="text18">6,000원</p>
+                            </li>
+                            <li>
+                                <p class="text18 menu">쿠키앤크림 푸딩</p>
+                                <p class="text18">5,000원</p>
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper mySwiper_m display_none_pc">
+            <div class="swiper-wrapper click_scroll">
+                <a href="#info01" class="swiper-slide">
+                    <img src="image/contents/bast_cafe_list/0_list/list_1.jpg">
+                    <div class="cafe_name">
+                        <h4>서울</h4>
+                        <h3>유원섬커피</h3>
+                        <ul class="menu_list display_none_t">
+                            <li>
+                                <p class="text18 menu">커스타드 푸딩</p>
+                                <p class="text18">4,500원</p>
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="#info02" class="swiper-slide">
+                    <img src="image/contents/bast_cafe_list/0_list/list_2.jpg">
+                    <div class="cafe_name">
+                        <h4>서울</h4>
+                        <h3>바이러닉 연구소</h3>
+                        <ul class="menu_list display_none_t">
+                            <li>
+                                <p class="text18 menu">클래식 푸딩</p>
+                                <p class="text18">5,000원</p>
+                            </li>
+                            <li>
+                                <p class="text18 menu">초콜릿 푸딩</p>
+                                <p class="text18">5,000원</p>
+                            </li>
+                            <li>
+                                <p class="text18 menu">말차 푸딩</p>
+                                <p class="text18">5,000원</p>
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="#info03" class="swiper-slide">
+                    <img src="image/contents/bast_cafe_list/0_list/list_3.jpg">
+                    <div class="cafe_name">
+                        <h4>인천</h4>
+                        <h3>카페 소삼</h3>
+                        <ul class="menu_list display_none_t">
+                            <li>
+                                <p class="text18 menu">커스타드 푸딩</p>
+                                <p class="text18">6,000원</p>
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="#info04" class="swiper-slide">
+                    <img src="image/contents/bast_cafe_list/0_list/list_4.jpg">
+                    <div class="cafe_name">
+                        <h4>경기</h4>
+                        <h3>킷사텐</h3>
+                        <ul class="menu_list display_none_t">
+                            <li>
+                                <p class="text18 menu">푸딩</p>
+                                <p class="text18">5,000원</p>
+                            </li>
+                            <li>
+                                <p class="text18 menu">위스키 푸딩</p>
+                                <p class="text18">6,000원</p>
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="#info05" class="swiper-slide">
+                    <img src="image/contents/bast_cafe_list/0_list/list_5.jpg">
+                    <div class="cafe_name">
+                        <h4>강릉</h4>
+                        <h3>카페덕덕</h3>
+                        <ul class="menu_list display_none_t">
+                            <li>
+                                <p class="text18 menu">커스터드 푸딩</p>
+                                <p class="text18">5,500원</p>
+                            </li>
+                            <li>
+                                <p class="text18 menu">옥수수 커스터드 푸딩</p>
+                                <p class="text18">6,000원</p>
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="#info06" class="swiper-slide">
+                    <img src="image/contents/bast_cafe_list/0_list/list_6.jpg">
+                    <div class="cafe_name">
+                        <h4>대전</h4>
+                        <h3>브루블룸</h3>
+                        <ul class="menu_list display_none_t">
+                            <li>
+                                <p class="text18 menu">푸유 푸딩</p>
+                                <p class="text18">4,500원</p>
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="#info07" class="swiper-slide">
+                    <img src="image/contents/bast_cafe_list/0_list/list_7.jpg">
+                    <div class="cafe_name">
+                        <h4>대구</h4>
+                        <h3>험블앤멈블</h3>
+                        <ul class="menu_list display_none_t">
+                            <li>
+                                <p class="text18 menu">오븐 푸딩</p>
+                                <p class="text18">5,000원</p>
+                            </li>
+                            <li>
+                                <p class="text18 menu">푸딩 빙수</p>
+                                <p class="text18">12,500원</p>
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="#info08" class="swiper-slide">
+                    <img src="image/contents/bast_cafe_list/0_list/list_8.jpg">
+                    <div class="cafe_name">
+                        <h4>전라도</h4>
+                        <h3>커피 학산로</h3>
+                        <ul class="menu_list display_none_t">
+                            <li>
+                                <p class="text18 menu">밀크 푸딩</p>
+                                <p class="text18">5,000원</p>
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="#info09" class="swiper-slide">
+                    <img src="image/contents/bast_cafe_list/0_list/list_9.jpg">
+                    <div class="cafe_name">
+                        <h4>부산</h4>
+                        <h3>DUDU</h3>
+                        <ul class="menu_list display_none_t">
                             <li>
                                 <p class="text18 menu">카라멜 푸딩</p>
                                 <p class="text18">5,000원</p>
@@ -403,14 +582,14 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="imagebox element_up">
+                    <div class="imagebox element_up display_none">
                         <ul>
                             <li>
                                 <a href="javascript:void(0);" class="image-link">
                                     <img src="image/contents/bast_cafe_list/1_youwentsome/detail_1.jpg" alt="유원섬 내부">
                                 </a>
                             </li>
-                            <li>
+                            <li class="display_none_t">
                                 <a href="javascript:void(0);" class="image-link">
                                     <img src="image/contents/bast_cafe_list/1_youwentsome/detail_2.jpg" alt="유원섬 인테리어">
                                 </a>
@@ -475,14 +654,14 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="imagebox element_up">
+                    <div class="imagebox element_up display_none">
                         <ul>
                             <li>
                                 <a href="javascript:void(0);" class="image-link">
                                     <img src="image/contents/bast_cafe_list/2_bynoric/detail_1.jpg" alt="바이러닉 내부">
                                 </a>
                             </li>
-                            <li>
+                            <li class="display_none_t">
                                 <a href="javascript:void(0);" class="image-link">
                                     <img src="image/contents/bast_cafe_list/2_bynoric/detail_2.jpg" alt="바이러닉 간판">
                                 </a>
@@ -536,14 +715,14 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="imagebox element_up">
+                    <div class="imagebox element_up display_none">
                         <ul>
                             <li>
                                 <a href="javascript:void(0);" class="image-link">
                                     <img src="image/contents/bast_cafe_list/3_sosam/detail_1.jpg" alt="소삼 내부">
                                 </a>
                             </li>
-                            <li>
+                            <li class="display_none_t">
                                 <a href="javascript:void(0);" class="image-link">
                                     <img src="image/contents/bast_cafe_list/3_sosam/detail_2.jpg" alt="소삼 내부">
                                 </a>
@@ -600,14 +779,14 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="imagebox element_up">
+                    <div class="imagebox element_up display_none">
                         <ul>
                             <li>
                                 <a href="javascript:void(0);" class="image-link">
                                     <img src="image/contents/bast_cafe_list/4_kissaten/detail_1.jpg" alt="킷사텐 내부">
                                 </a>
                             </li>
-                            <li>
+                            <li class="display_none_t">
                                 <a href="javascript:void(0);" class="image-link">
                                     <img src="image/contents/bast_cafe_list/4_kissaten/detail_2.jpg" alt="킷사텐 내부">
                                 </a>
@@ -665,14 +844,14 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="imagebox element_up">
+                    <div class="imagebox element_up display_none">
                         <ul>
                             <li>
                                 <a href="javascript:void(0);" class="image-link">
                                     <img src="image/contents/bast_cafe_list/5_virtue/detail_1.jpg" alt="카페덕덕 외부">
                                 </a>
                             </li>
-                            <li>
+                            <li class="display_none_t">
                                 <a href="javascript:void(0);" class="image-link">
                                     <img src="image/contents/bast_cafe_list/5_virtue/detail_2.jpg" alt="카페덕덕 내부">
                                 </a>
@@ -725,14 +904,14 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="imagebox element_up">
+                    <div class="imagebox element_up display_none">
                         <ul>
                             <li>
                                 <a href="javascript:void(0);" class="image-link">
                                     <img src="image/contents/bast_cafe_list/6_brewbloom/deyail_1.jpg" alt="브루블룸 외부">
                                 </a>
                             </li>
-                            <li>
+                            <li class="display_none_t">
                                 <a href="javascript:void(0);" class="image-link">
                                     <img src="image/contents/bast_cafe_list/6_brewbloom/deyail_2.jpg" alt="브루블룸 내부">
                                 </a>
@@ -792,21 +971,21 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="imagebox element_up">
+                    <div class="imagebox element_up display_none">
                         <ul>
                             <li>
                                 <a href="javascript:void(0);" class="image-link">
-                                    <img src="image/contents/bast_cafe_list/7_humbleandmonble/detail_1.jpg" alt="유원섬 외부">
+                                    <img src="image/contents/bast_cafe_list/7_humbleandmonble/detail_1.jpg" alt="험블앤멈블 외부">
+                                </a>
+                            </li>
+                            <li class="display_none_t">
+                                <a href="javascript:void(0);" class="image-link">
+                                    <img src="image/contents/bast_cafe_list/7_humbleandmonble/detail_2.jpg" alt="험블앤멈블 내부">
                                 </a>
                             </li>
                             <li>
                                 <a href="javascript:void(0);" class="image-link">
-                                    <img src="image/contents/bast_cafe_list/7_humbleandmonble/detail_2.jpg" alt="유원섬 내부">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);" class="image-link">
-                                    <img src="image/contents/bast_cafe_list/7_humbleandmonble/detail_3.jpg" alt="유원섬 푸딩빙수">
+                                    <img src="image/contents/bast_cafe_list/7_humbleandmonble/detail_3.jpg" alt="험블앤멈블 푸딩빙수">
                                 </a>
                             </li>
                         </ul>
@@ -853,21 +1032,21 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="imagebox element_up">
+                    <div class="imagebox element_up display_none">
                         <ul>
                             <li>
                                 <a href="javascript:void(0);" class="image-link">
-                                    <img src="image/contents/bast_cafe_list/8_haksanro/deyail_1.jpg" alt="유원섬 외부">
+                                    <img src="image/contents/bast_cafe_list/8_haksanro/deyail_1.jpg" alt="커피 학산로 외부">
+                                </a>
+                            </li>
+                            <li class="display_none_t">
+                                <a href="javascript:void(0);" class="image-link">
+                                    <img src="image/contents/bast_cafe_list/8_haksanro/deyail_2.jpg" alt="커피 학산로 내부">
                                 </a>
                             </li>
                             <li>
                                 <a href="javascript:void(0);" class="image-link">
-                                    <img src="image/contents/bast_cafe_list/8_haksanro/deyail_2.jpg" alt="유원섬 내부">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);" class="image-link">
-                                    <img src="image/contents/bast_cafe_list/8_haksanro/deyail_3.jpg" alt="유원섬 푸딩">
+                                    <img src="image/contents/bast_cafe_list/8_haksanro/deyail_3.jpg" alt="유커피 학산로원섬 푸딩">
                                 </a>
                             </li>
                         </ul>
@@ -902,7 +1081,7 @@
                                     <p class="text18 menu">커피 푸딩</p>
                                     <p class="text18">5,000원</p>
                                 </li>
-                                <li>
+                                <li class="display_none_t">
                                     <p class="text18">...</p>
                                 </li>
                             </ul>
@@ -930,14 +1109,14 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="imagebox element_up">
+                    <div class="imagebox element_up display_none">
                         <ul>
                             <li>
                                 <a href="javascript:void(0);" class="image-link">
                                     <img src="image/contents/bast_cafe_list/9_dudu/detail_1.jpg" alt="두두 외부">
                                 </a>
                             </li>
-                            <li>
+                            <li class="display_none_t">
                                 <a href="javascript:void(0);" class="image-link">
                                     <img src="image/contents/bast_cafe_list/9_dudu/detail_2.jpg" alt="두두 내부">
                                 </a>
@@ -952,7 +1131,7 @@
                 </div>
             </li>
 
-            <div class="modal">
+            <div class="modal display_none">
                 <div class="overlay"></div>
                 <img src="" alt="확대 이미지" class="modal-image">
             </div>
@@ -984,7 +1163,9 @@
             </div>
         </div>
     </footer>
+    <!-- Footer End -->
 
+    <!-- JavaScript & jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
