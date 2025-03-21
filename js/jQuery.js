@@ -1,4 +1,8 @@
 $(function(){
+    // 로딩 페이지
+    $('#overlay, #waitingModal').remove(); // 로딩 화면 제거
+    $('#content').show(); // 콘텐츠 표시
+
     //toggle bttton click event
     $('.toggle_button').on('click', function(e){
         e.preventDefault();
@@ -105,3 +109,4 @@ $(function(){
         $(".modal").fadeOut();
     });
 });
+
