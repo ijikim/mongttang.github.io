@@ -56,8 +56,23 @@ $(function(){
         //},
     });
 
+    //swiper event 모바일
+    var swiper = new Swiper(".mySwiper_m", {
+        slidesPerView: 1,         // 한 번에 보이는 이미지 개수 (4개)
+        spaceBetween: 10,         // 이미지 간격 (10px)
+        autoplay: {
+            delay: 1200,            // 3초마다 자동으로 슬라이드 이동
+            disableOnInteraction: false,
+        },
+        loop: true,               // 슬라이드가 끝나면 처음으로 돌아가게
+        //pagination: {
+        //    el: ".swiper-pagination",
+        //    clickable: true,
+        //},
+    });
+
     //<a> click scroll event
-    $(".click_scroll a").click(function(event){
+    $(".click_scroll a").on('click', function(event){
         event.preventDefault(); // 기본 이벤트 제거
         var target = $(this).attr("href"); // 클릭한 a 태그의 href 값 가져오기
         $("html, body").animate({
@@ -66,7 +81,7 @@ $(function(){
     });
 
     //<a> click scroll event(header)
-    $("header a").click(function(event){
+    $("header a").on('click',function(event){
         event.preventDefault(); // 기본 이벤트 제거
         var target = $(this).attr("href"); // 클릭한 a 태그의 href 값 가져오기
         $("html, body").animate({
@@ -90,4 +105,3 @@ $(function(){
         $(".modal").fadeOut();
     });
 });
-
