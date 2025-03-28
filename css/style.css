@@ -494,11 +494,24 @@ body{overflow-x: hidden;}
     .parallax.background1{
         height: 100vh;
         background: url(../image/background/background1.jpg) center/cover no-repeat;
-        background-attachment: fixed;   
+        background-attachment: scroll;   
     }
     .parallax.background2{
         background: url(../image/background/background2.jpg) center/cover no-repeat;
-        background-attachment: fixed;
+        background-attachment: scroll;
+    }
+    .parallax::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: inherit;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
     }
     .element_up{
         opacity: 0;
