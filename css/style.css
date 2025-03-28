@@ -485,20 +485,35 @@ body{overflow-x: hidden;}
     /*Layout style*/
     .display_none_pc{display: none !important;}
     .display_none_t{display: none !important;}
-    .parallax{
+    .parallax {
         position: relative;
-        top: 0; left: 0;
+        top: 0;
+        left: 0;
         width: 100vw;
         z-index: 1;
-    }
-    .parallax.background1{
-        height: 100vh;
-        background: url(../image/background/background1.jpg) center/cover no-repeat;
-        background-attachment: fixed;   
-    }
-    .parallax.background2{
-        background: url(../image/background/background2.jpg) center/cover no-repeat;
         background-attachment: fixed;
+        background-position: center;
+    }
+    .parallax.background1 {
+        background: url(../image/background/background1.jpg) center/cover no-repeat;
+        min-height: 100vh;
+    }
+    .parallax.background2 {
+        background: url(../image/background/background2.jpg) center/cover no-repeat;
+        min-height: 100vh;
+    }
+    .parallax::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: inherit;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
     }
     .element_up{
         opacity: 0;
@@ -894,20 +909,35 @@ body{overflow-x: hidden;}
 @media screen and (max-width: 767px) {
     /*Layout style*/
     .display_none{display: none !important;}
-    .parallax{
+     .parallax {
         position: relative;
-        top: 0; left: 0;
+        top: 0;
+        left: 0;
         width: 100vw;
         z-index: 1;
-    }
-    .parallax.background1{
-        height: 100vh;
-        background: url(../image/background/background1.jpg) center/cover no-repeat;
-        background-attachment: fixed;   
-    }
-    .parallax.background2{
-        background: url(../image/background/background2.jpg) center/cover no-repeat;
         background-attachment: fixed;
+        background-position: center;
+    }
+    .parallax.background1 {
+        background: url(../image/background/background1.jpg) center/cover no-repeat;
+        min-height: 100vh;
+    }
+    .parallax.background2 {
+        background: url(../image/background/background2.jpg) center/cover no-repeat;
+        min-height: 100vh;
+    }
+    .parallax::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: inherit;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
     }
     .element_up{
         opacity: 0;
