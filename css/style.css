@@ -902,12 +902,12 @@ body{overflow-x: hidden;}
     }
     .parallax.background1{
         height: 100vh;
-        background: url(../image/background/background1.jpg) center/cover no-repeat;
-        background-attachment: fixed;   
+        background: url(../image/background/background1.jpg) no-repeat center center;
+        background-size: cover;
     }
     .parallax.background2{
-        background: url(../image/background/background2.jpg) center/cover no-repeat;
-        background-attachment: fixed;
+        background: url(../image/background/background2.jpg) no-repeat center center;
+        background-size: cover;
     }
     .element_up{
         opacity: 0;
