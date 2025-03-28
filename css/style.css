@@ -500,19 +500,6 @@ body{overflow-x: hidden;}
         background: url(../image/background/background2.jpg) center/cover no-repeat;
         background-attachment: scroll;
     }
-    .parallax::before {
-        content: "";
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background: inherit;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        z-index: -1;
-    }
     .element_up{
         opacity: 0;
         transform: translateY(50px);
